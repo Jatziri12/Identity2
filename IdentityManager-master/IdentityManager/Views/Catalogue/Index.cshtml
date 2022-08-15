@@ -1,0 +1,31 @@
+﻿@inject Microsoft.AspNetCore.Authorization.IAuthorizationService Authoriation
+
+@{ ViewData["Title"] = "Home Page"; }
+
+@{ var isAdmin = await Authoriation.AuthorizeAsync(User, null, "Admin"); }
+
+<div class="text-center">
+    <h1 class="display-4 text-primary">Modelos</h1>
+    <h2>Lili.com</h2>
+</div>
+
+
+<html>
+<body>
+    < class="text-center">
+    <img src="~/media/image/imagen2.jpg" width="237" height="192">
+    <img src="~/media/image/imagen1.jpg" width="237" height="192">
+    </p>
+    <p class="text-center">
+        <img src="~/media/image/imagen3.jpg" width="237" height="192">
+        <img src="~/media/image/imagen4.jpg" width="237" height="192">
+    </p><img src="" alt="" />
+    <p class="text-center">
+        <img src="~/media/image/imagen5.jpg" width="237" height="192">
+        <img src="~/media/image/imagen6.jpg" width="237" height="192">
+    </p>
+    <p class="text-center">
+        <img src="~/media/image/imagen7.jpg" width="237" height="192">
+    </p>
+</body>
+</html>
